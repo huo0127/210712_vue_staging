@@ -16,7 +16,7 @@
 <script scoped>
 export default {
   name: "Footer",
-  props: ["todos", "updateAll", "clearAll"],
+  props: ["todos"],
   computed: {
     doneCount() {
       return this.todos.reduce(
@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /*footer*/
 .todo-footer {
   height: 40px;
