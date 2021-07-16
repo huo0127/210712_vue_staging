@@ -9,13 +9,15 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "less-loader": "^10.0.1",
     "nanoid": "^3.1.23",
     "postcss-loader": "^4.2.0",
     "pubsub-js": "^1.9.3",
     "sass-loader": "^10.1.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-resource": "^1.5.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
