@@ -261,7 +261,6 @@
    4. 提供数据：```pubsub.publish('xxx',数据)```
 
    5. 最好在beforeDestroy钩子中，用```PubSub.unsubscribe(pid)```去<span style="color:red">取消订阅。</span>
-	
 ## nextTick
 
 1. 语法：```this.$nextTick(回调函数)```
@@ -326,7 +325,7 @@ module.exports = {
       '/api1': {// 匹配所有以 '/api1'开头的请求路径
         target: 'http://localhost:5000',// 代理目标的基础路径
         changeOrigin: true,
-        pathRewrite: {'^/api1': ''}
+        pathRewrite: {'^/api1': ''} //匹配所有以API開頭的路徑, 然後把API都變成空字符串
       },
       '/api2': {// 匹配所有以 '/api2'开头的请求路径
         target: 'http://localhost:5001',// 代理目标的基础路径
@@ -1065,5 +1064,5 @@ module.exports = {
    1. 地址干净，美观 。
    2. 兼容性和hash模式相比略差。
    3. 应用部署上线时需要后端人员支持，解决刷新页面服务端404的问题。
-	 
+	
 	 

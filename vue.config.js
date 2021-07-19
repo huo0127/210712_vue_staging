@@ -16,13 +16,14 @@ module.exports = {
     proxy: {
       "/atguigu": {
         target: "http://localhost:5000",
-        pathRewrite: { "/atguigu": "" },
+        //!匹配所有以atguigu開頭的路徑, 然後把atguigu都變成空字符串
+        pathRewrite: { "^/atguigu": "" },
         // ws: true, //用於支持websocket
         // changeOrigin: true, //用於控制請求頭中的host值
       },
       "/demo": {
         target: "http://localhost:5001",
-        pathRewrite: { "/demo": "" },
+        pathRewrite: { "^/demo": "" },
         // ws: true, //用於支持websocket
         // changeOrigin: true, //用於控制請求頭中的host值
       },
