@@ -974,9 +974,15 @@ module.exports = {
 2. 具体编码：
 
    ```vue
-   <keep-alive include="News"> 
-       <router-view></router-view>
-   </keep-alive>
+     <!-- 緩存多個路由組件 -->
+          <keep-alive :include="['News','Message']">
+           <router-view></router-view>
+         </keep-alive>
+   
+         <!-- 緩存一個路由組件 -->
+         <keep-alive include="News">
+           <router-view></router-view>
+         </keep-alive>
    ```
 
 ### 11.两个新的生命周期钩子
