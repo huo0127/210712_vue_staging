@@ -11,10 +11,18 @@
           <a class="list-group-item" href="./home.html">Home</a> -->
 
           <!-- vue中借住vouter-link標籤實現路由的切換 -->
-          <router-link class="list-group-item" active-class="active" to="/about"
+          <router-link
+            replace
+            class="list-group-item"
+            active-class="active"
+            to="/about"
             >About</router-link
           >
-          <router-link class="list-group-item" active-class="active" to="/home"
+          <router-link
+            replace
+            class="list-group-item"
+            active-class="active"
+            to="/home"
             >Home</router-link
           >
         </div>
